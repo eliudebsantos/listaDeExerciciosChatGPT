@@ -1,4 +1,19 @@
 function contarAte (n){
+    let i = 1 
+    let array = []
+    if (n < 1){
+        return "Valor inválido"
+    }
+    while(i <= n){
+        array.push(i)
+        i++
+    }
+    return array
+}
+
+console.log(contarAte(100))
+
+/*function contarAte (n){
     if (typeof n !== "number" || n < 0){
         console.log("Valor inválido")
         return
